@@ -5,7 +5,6 @@ function myFunction() {
     // Make a GET request with authentication using the Fetch API
     fetch(apiUrl, {
         headers: {
-            mode: 'no-cors',
             Authorization: "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImExMDBjZWIyLTY2NTEtNGQyYS04NWM2LTRmYzg1NGQyNTExZSIsImlhdCI6MTcwNDUxNTc1Nywic3ViIjoiZGV2ZWxvcGVyLzgxODM0YWM4LTFmMTUtNmNkNi1hYjc2LTc1M2FmOTc5NWRlYyIsInNjb3BlcyI6WyJicmF3bHN0YXJzIl0sImxpbWl0cyI6W3sidGllciI6ImRldmVsb3Blci9zaWx2ZXIiLCJ0eXBlIjoidGhyb3R0bGluZyJ9LHsiY2lkcnMiOlsiNzIuOTMuMjIyLjU4Il0sInR5cGUiOiJjbGllbnQifV19.sBIZ8zjhaQZ-rQc5YsfNSdkE9TZBSHiOs2LzTe0U3oWGk77adAR4nOmESIOvNK1zba_JK__bu2UT7rCu1LBuJQ",
         },
     })
