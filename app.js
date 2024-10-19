@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ctx.fillRect(imageSectionWidth, 0, textSectionWidth, imgHeight);
         
         // Draw a white border around the image
-        ctx.strokeStyle = 'white';
+        ctx.strokeStyle = 'black';
         ctx.lineWidth = 8;
         ctx.strokeRect(0, 0, imageSectionWidth + textSectionWidth, imgHeight);
 		
