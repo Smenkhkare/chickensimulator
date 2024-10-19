@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const imageUploader = document.getElementById('imageUploader');
     const quoteInput = document.getElementById('quote');
     const authorInput = document.getElementById('author');
-    const generateBtn = document.getElementById('generateBtn');
     const downloadLink = document.getElementById('downloadLink');
 
     let uploadedImage;
@@ -60,6 +59,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Draw a white border around the image
         ctx.strokeStyle = 'white';
+        ctx.lineWidth = 8;
+        ctx.strokeRect(0, 0, imageSectionWidth + textSectionWidth, imgHeight);
+		
+		// Draw a black border around the image
+        ctx.strokeStyle = 'black';
         ctx.lineWidth = 4;
         ctx.strokeRect(0, 0, imageSectionWidth + textSectionWidth, imgHeight);
         
@@ -128,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		
 		
         // Draw the logo
-        const logoWidth = 125; // Set the desired logo width
+        const logoWidth = 100; // Set the desired logo width
         const logoHeight = (logoWidth / logoImage.width) * logoImage.height; // Maintain aspect ratio
         ctx.drawImage(logoImage, quoteX - logoWidth / 2, canvas.height - logoHeight - 20, logoWidth, logoHeight); // Draw logo
 		
@@ -151,9 +155,6 @@ document.addEventListener('DOMContentLoaded', function() {
             reader.readAsDataURL(file);
         }
     });
-
-	// Generate image with quote when the button is clicked
-    generateBtn.addEventListener('click', drawImageWithQuote);
 
     // Update canvas in real-time when the quote is typed
     quoteInput.addEventListener('input', drawImageWithQuote);
