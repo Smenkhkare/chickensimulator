@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Image, Add Quote, and Author</title>
+    <title>Chicken Simulator</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Satisfy&display=swap" rel="stylesheet">
     <style>
         body {
@@ -18,24 +18,24 @@
             font-weight: 700;
             color: #2c3e50;
         }
-	.input-container {
-	    margin: 10px 0; 
-	    display: inline-block; 
-	    text-align: left; 
-	    width: 90%; 
-	    max-width: 500px;
-	    border: 2px solid #ccc;  /* Add border to create a box */
-	    border-radius: 5px;      /* Rounded corners */
-	    padding: 10px;           /* Padding inside the box */
-	    background-color: white; /* Background color for contrast */
-	}
-	.file-input {
-	    border: none;  /* Remove the border from the file input */
-	    padding: 10px;
-	    width: 100%;  /* Full width within the container */
-	    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Keep the shadow for aesthetics */
-	    background-color: white; /* Background color for contrast */
-	}
+		.input-container {
+			margin: 10px 0; 
+			display: inline-block; 
+			text-align: left; 
+			width: 90%; 
+			max-width: 500px;
+			border: 2px solid #ccc;
+			border-radius: 5px;  
+			padding: 10px;      
+			background-color: white;
+		}
+		.file-input {
+			border: none;
+			padding: 10px;
+			width: 100%;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+			background-color: white;
+		}
         input[type="file"],
         textarea,
         input[type="text"] {
@@ -54,20 +54,6 @@
         input[type="text"] {
             width: calc(80% - 20px);
         }
-        button {
-            font-family: 'Open Sans', sans-serif;
-            background-color: #3498db;
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        button:hover {
-            background-color: #2980b9;
-        }
         canvas {
             border: 2px solid #000000;
             margin-top: 20px;
@@ -77,7 +63,7 @@
 </head>
 <body>
     <h1>Quote Creator</h1>
-    <div class="input-container">
+	<div class="input-container">
 		<label for="imageUploader">Upload an image:</label>
 		<input type="file" id="imageUploader" accept="image/*">
 	</div>
@@ -85,8 +71,6 @@
     <textarea id="quote" placeholder="Enter your quote here..." rows="4" cols="50"></textarea>
     <br>
     <input type="text" id="author" placeholder="Enter the author's name">
-    <br>
-    <button id="generateBtn">Generate Image with Quote</button>
     <br>
     <canvas id="quoteCanvas" width="800" height="500"></canvas>
 
