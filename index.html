@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicken Simulator</title>
+    <title>Quote Creator</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Satisfy&display=swap" rel="stylesheet">
     <style>
         body {
@@ -19,14 +19,14 @@
             color: #2c3e50;
         }
 		.input-container {
-			margin: 10px 0; 
-			display: inline-block; 
-			text-align: left; 
+			margin: 10px 0;
+			display: inline-block;
+			text-align: left;
 			width: 90%;
 			max-width: 750px;
 			border: 2px solid #ccc;
-			border-radius: 5px;  
-			padding: 10px;      
+			border-radius: 5px;
+			padding: 10px;
 			background-color: white;
 		}
 		.file-input {
@@ -69,6 +69,8 @@
     <textarea id="quote" placeholder="Enter your quote here..." rows="4" cols="50"></textarea>
     <br>
     <input type="text" id="author" placeholder="Enter the author's name">
+    <br>
+    <button id="randomizeButton">Generate Random Quote and Image</button>
     <br>
     <canvas id="quoteCanvas" width="800" height="500"></canvas>
 
